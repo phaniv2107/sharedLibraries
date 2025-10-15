@@ -10,6 +10,7 @@
                 stage('Build') {
                     steps {
                         script {
+                            sh 'cd demo-java-app'
                             // Example build command based on config
                             if (config.buildTool == 'maven') {
                                 sh "mvn clean install"
