@@ -10,7 +10,8 @@
                 stage('Build') {
                     steps {
                         script {
-                            // sh 'cd demo-java-app'
+                            // sh 'cd demo-java-app
+                               sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app'
                             // Example build command based on config
                             if (config.buildTool == 'maven') {
                                 sh "mvn clean install"
