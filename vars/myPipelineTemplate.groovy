@@ -10,6 +10,7 @@
                 stage('Build') {
                     steps {
                         script {
+                             sh 'ls -lrt'
                             // sh 'cd demo-java-app
                                sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app'
                                sh 'ls -lrt'
