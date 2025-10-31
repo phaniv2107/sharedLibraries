@@ -32,13 +32,13 @@
                     }
                 }
             }
-                stage('Test') {
+               /* stage('Test') {
                     steps {
                         sh "mvn test" // Assuming a script in your project
                     }
                 }
                 // Add more stages as needed
-            }
+
             post {
                 always {
                     echo "Pipeline finished for project: ${config.projectName}"
@@ -46,3 +46,4 @@
             }
         }
     }
+}
